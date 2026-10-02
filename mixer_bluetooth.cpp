@@ -57,7 +57,7 @@ void processa() {
   int y = eixo(-ctl->axisY());      // cima = positivo
   int gatilho = map(ctl->throttle(), 0, 1023, 0, 100);  // R2
   Serial.printf("GATILHO: %d%% DIRECAO X: %d DIRECAO Y: %d%s\n", gatilho, x, y, (!x && !y) ? " [PARADO]" : "");
-}
+}   
 
 void setup() {
   Serial.begin(115200);
